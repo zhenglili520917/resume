@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jia Yi's 平面作品</title>
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        #manyPic{
+            width: 1200px;
+            margin: auto;
+        }
+        body {
+            background-color: rgb(235, 229, 208);
+        }
+
+        /* .wrap {
+            width: 1200px;
+            margin: auto;
+        } */
+
+        h3 {
+            font-size: 3rem;
+            text-align: center;
+            color: rgb(66, 54, 87);
+            margin: 30px;
+        }
+
+        .wrap a {
+            display: block;
+            width: 390px;
+            box-shadow: 0 0 5px #000;
+            margin: 5px;
+        }
+
+        .wrap img {
+            width: 100%;
+            vertical-align: bottom;
+        }
+
+        /* back */
+
+        .back{
+            display: flex;
+            justify-content: end;
+            width: 1200px;
+            /* border: 1px solid red; */
+        }
+        .back a{
+            width: 400px;
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 800;
+            color: #000;
+            text-align: right;
+            margin: 30px;
+            background-color: #fff;
+            border-bottom: 2px dashed blue;
+            border-top: 2px dashed blue;
+        }
+        footer{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(66, 54, 87);
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="manyPic">
+        <!-- 回去按鈕 -->
+        <div class="back">
+            <a href="index.html">BACK to JIA YI's Resume</a>
+        </div>
+        <!-- 照片 -->
+        <h3>平面作品</h3>
+        <div class="wrap">
+            <a href="./images/design/d1.jpg">
+                <img src="./images/design/d1.jpg" data-lightbox="group" data-title="photo1" alt="可樂">
+            </a>
+            <a href="/images/design/d2.jpg">
+                <img src="/images/design/d2.jpg" data-lightbox="group" data-title="photo2" alt="">
+            </a>
+            <a href="/images/design/d3.png">
+                <img src="/images/design/d3.png" data-lightbox="group" data-title="photo3" alt="">
+            </a>
+            <a href="/images/design/d4.png">
+                <img src="/images/design/d4.png" data-lightbox="group" data-title="photo4" alt="">
+            </a>
+            <a href="/images/design/d5.jpg">
+                <img src="/images/design/d5.jpg" data-lightbox="group" data-title="photo5" alt="">
+            </a>
+            <a href="/images/design/d6.png">
+                <img src="/images/design/d6.png" data-lightbox="group" data-title="photo6" alt="">
+            </a>
+            <a href="/images/design/d7.jpg">
+                <img src="/images/design/d7.jpg" data-lightbox="group" data-title="photo7" alt="">
+            </a>
+            <a href="/images/design/d8.png">
+                <img src="/images/design/d8.png" data-lightbox="group" data-title="photo7" alt="">
+            </a>
+            <a href="/images/design/d9.jpg">
+                <img src="/images/design/d9.jpg" data-lightbox="group" data-title="photo7" alt="">
+            </a>
+            <a href="/images/design/d10.png">
+                <img src="/images/design/d10.png" data-lightbox="group" data-title="photo7" alt="">
+            </a>
+            
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        Copyright &copy; 2023 by 鄭佳怡
+    </footer>
+
+    <!-- 燈箱效果 -->
+    <script src="./js/lightbox-plus-jquery.js"></script>
+    <script src="./js/lightbox.js"></script>
+    <!-- 瀑布流 -->
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/masonry.pkgd.min.js"></script>
+
+
+    <script>
+        $(function () {
+            $('.wrap').imagesLoaded(function () {
+                $('.wrap').masonry();
+            });
+        });
+    </script>
+</body>
+
+</html>
